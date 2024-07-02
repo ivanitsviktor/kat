@@ -1,0 +1,20 @@
+def one_two_three(n):
+    a=''
+    b=''
+    c=[]
+    for i in range(n//9):
+        a+='9'
+    a+=str(n%9)
+    c.append(int(a)) 
+    for i in range(n):
+        b+='1'
+    c.append(int(b))       
+    return c    
+    
+    
+    
+    
+    
+    
+    # one_two_three(19), [991, 1111111111111111111])
+one_two_three(19)
