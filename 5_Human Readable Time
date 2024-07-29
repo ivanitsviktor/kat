@@ -1,0 +1,12 @@
+def make_readable(seconds):
+    hh=seconds//3600
+    mm=(seconds-hh*3600)//60
+    ss=seconds-hh*3600-mm*60
+    if len(str(hh))<2:
+        hh='0'+str(hh)
+    if len(str(mm))<2:
+        mm='0'+str(mm)
+    if len(str(ss))<2:
+        ss='0'+str(ss)
+    return(str(hh)+':'+str(mm)+':'+str(ss))
+print(make_readable(3599))

@@ -1,0 +1,12 @@
+def order(sentence):
+    x=[]
+    s=sentence.split(' ')
+    for i in range(len(s)):
+        for j in range(len(s)):
+            if str(i+1) in s[j]:
+                x.append(s[j])
+    
+    return(' '.join(x))
+
+
+print(order("is2 Thi1s T4est 3a"))

@@ -1,0 +1,21 @@
+def snail(snail_map):
+    s=[]
+    z=[]
+    while snail_map !=[]:
+                
+        s.append(snail_map[0])
+        snail_map.remove(snail_map[0])
+        
+        a=list(zip(*snail_map))
+        a.reverse()
+        
+        snail_map=a
+    for x in s:
+        for y in x:
+            z.append(y)
+    return z
+    
+        
+print(snail([[1,2,3],
+         [8,9,4],
+         [7,6,5]]))
